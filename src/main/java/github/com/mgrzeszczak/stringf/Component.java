@@ -28,10 +28,6 @@ final class Component<T> {
                 global != null ? global.format(component) : component.toString();
     }
 
-    Class<?> type() {
-        return this.component.getClass();
-    }
-
     boolean exactMatch(Formatter<?> formatter) {
         return component.getClass().equals(formatter.target());
     }
